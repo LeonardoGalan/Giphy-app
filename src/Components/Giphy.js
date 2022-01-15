@@ -12,8 +12,9 @@ const Giphy = () => {
           limit: 20
         }
       });
-     console.log(results);
-      setData(results.data.data);
+
+      console.log(results);
+        setData(results.data.data);
     };
 
     fetchData();
@@ -30,17 +31,20 @@ const Giphy = () => {
         }
       })
       setData(results.data.data)
-    }
+  }
 
   const renderGifs = () => {
     return data.map((elements) => {
       return (
         <div key = {elements.id} className="gif">
           <img src = {elements.images.fixed_height.url} />
+        <div key={elements.id} className="gif">
+          <img src={elements.images.fixed_height.url} />
         </div>
       );
     });
   };
+
 
   const handleSearchChange = (event) => {
     setSearch(event.target.value)
@@ -57,7 +61,7 @@ const Giphy = () => {
         className = "form-control"/>
       <button onClick = {handleSubmit} type ="submit" className = "btn btn-primary mx-2"> Search </button>
     </form>
-    <h1> CURRENTLY TRENDING GIFS!</h1>
+    <h1> CURRENTLY TRENDING GIFS! </h1>
       <div className = "container gifs">
      { renderGifs() }
      </div>
