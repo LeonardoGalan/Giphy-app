@@ -38,8 +38,6 @@ const Giphy = () => {
       return (
         <div key = {elements.id} className="gif">
           <img src = {elements.images.fixed_height.url} />
-        <div key={elements.id} className="gif">
-          <img src={elements.images.fixed_height.url} />
         </div>
       );
     });
