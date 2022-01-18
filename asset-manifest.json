@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/giphy-api-app/static/css/main.4842cf13.css",
-    "main.js": "/giphy-api-app/static/js/main.d6c68824.js",
+    "main.css": "/giphy-api-app/static/css/main.10e96941.css",
+    "main.js": "/giphy-api-app/static/js/main.7d785b42.js",
     "index.html": "/giphy-api-app/index.html",
-    "main.4842cf13.css.map": "/giphy-api-app/static/css/main.4842cf13.css.map",
-    "main.d6c68824.js.map": "/giphy-api-app/static/js/main.d6c68824.js.map"
+    "main.10e96941.css.map": "/giphy-api-app/static/css/main.10e96941.css.map",
+    "main.7d785b42.js.map": "/giphy-api-app/static/js/main.7d785b42.js.map"
   },
   "entrypoints": [
-    "static/css/main.4842cf13.css",
-    "static/js/main.d6c68824.js"
+    "static/css/main.10e96941.css",
+    "static/js/main.7d785b42.js"
   ]
 }
