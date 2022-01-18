@@ -3,13 +3,14 @@ import "./App.css";
 import SearchField from "./Components/SearchField";
 import GifCard from "./Components/GifCard";
 
-const App = () => {
+export default function App() {
   const [searchType, setSearchType] = useState("search");
   const [inputValue, setInputValue] = useState("");
   const [wasClicked, setWasClicked] = useState(false);
 
   return (
     <div>
+      <header>GIF Generator</header>
       <SearchField
         inputValue = {inputValue}
         setInputValue = {setInputValue}
@@ -24,6 +25,4 @@ const App = () => {
       />
     </div>
   );
-};
-
-export default App;
+}

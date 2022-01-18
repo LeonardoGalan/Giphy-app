@@ -7,7 +7,7 @@ export default function GifCard(props) {
 
     let apiParams = {
         api_key: "xShr94N7vteaLhkPtg2Kv4e9ZEmkQV8F",
-        limit: 20,
+        limit: 200,
     }
 
     if (searchType === "search") {
@@ -32,23 +32,15 @@ export default function GifCard(props) {
     console.log(gifs);
 
     return (
-        <div>
-            {/*searchType !== "random" && */}
+        <div className="gifs">
             {gifs.map((gif) => {
                 return (
-                    <div key={gif.id} className="gif">
+                    <figure key={gif.id} className="gif">
                         <img src={gif.images.fixed_height.url} />
-                    </div>
+                    </figure>
                 )
             })
             }
-            {/* {searchType === "random" && 
-                <div>
-                    <img src={gifs.url} />
-                </div>
-            } */}
-
-
         </div>
     )
 }
