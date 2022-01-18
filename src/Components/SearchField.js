@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
 
 export default function SearchField(props) {
   const { inputValue, setInputValue, setSearchType, setWasClicked } = props;
@@ -20,17 +19,16 @@ export default function SearchField(props) {
   };
 
   return (
-    <div className="m-5">
-      <form onSubmit={handleSubmit} className="form-inline justify-content-center mx-5">
+    <div>
+      <form onSubmit={handleSubmit}>
         <input
           value={inputValue}
           onChange={handleSearchChange}
           type="text"
-          placeholder="Search for Gifs!"
+          placeholder="Search for GIFs!"
           className="form-control"
         />
         <button type="button" onClick={handleClick} name="trending">Trending</button>
-        {/* <button type="button" onClick={handleClick} name="random">Random</button> */}
       </form>
     </div>
   );
